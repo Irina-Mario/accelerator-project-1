@@ -1,0 +1,58 @@
+.games__container {
+  padding: 25px 0;
+}
+
+.games__wrapper {
+  width: 100%;
+  min-height: 610;
+  background-color: $backgraund-banners;
+  color: $text-color-white;
+  padding: 40px;
+}
+
+.games__button {
+  width: 100%;
+  border: 2px solid #ffffff;
+}
+
+.games__wrapper p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.games__title {
+  font-family: "Alumni Sans", Arial, sans-serif;
+  font-size: 48px;
+  line-height: 54px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 16px;
+  width: 117px;
+  text-transform: uppercase;
+}
+
+.games__wrapper-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.games__data {
+  width: 56px;
+}
+
+
+.games__data span {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+
+.games__data .games__data-num {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+}

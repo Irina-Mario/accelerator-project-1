@@ -1,0 +1,14 @@
+.hero {
+  background-image: linear-gradient(90deg, #1c3477 0%, #1a3578 39%, #73184b 76%, #b4022a 100%);
+  color: #ffffff;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 120px;
+  }
+}
+
