@@ -1,0 +1,137 @@
+.offers-banner {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.offers-banner__image-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  outline: 1px solid brown;
+  @media (min-width: $tablet-width) {
+    width: 400px;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 280px;
+  }
+}
+
+.offers-banner__image {
+  margin-left: -15px;
+  display: block;
+  margin-bottom: 0;
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
+.offers-banner__inner {
+  background-color: $backgraund-banners;
+  color: $backgraund-color;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 25px;
+    margin-left: 0;
+    width: 278px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    padding: 40px 45px;
+  }
+}
+
+.offers-banner__content {
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    text-align: left;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+}
+
+.offers-banner__content span {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  margin-bottom: 9px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    text-align:left;
+    margin-bottom: 20px;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.offers-banner__content h4 {
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  margin-top: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 70px;
+    line-height: 70px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+}
+
+.offers-banner__content p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  margin-bottom: auto;
+  margin-top: 0;
+  
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 160px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 156px;
+  }
+}
+
+.offers-banner__button {
+  font-size: 14px;
+  line-height: 14px;
+  position: relative;
+  padding: 0;
+  text-align: start;
+  
+}
+
+.offers-banner__button::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 73px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -5px;
+}

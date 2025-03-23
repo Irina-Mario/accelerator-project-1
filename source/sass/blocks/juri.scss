@@ -1,0 +1,168 @@
+.juri__container {
+  padding: 40px 0;
+  @media (min-width: $tablet-width) {
+    padding: 30px 0 60px 0;    
+  }
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
+  }
+}
+
+
+.juri__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.juri__slide-wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+.juri__slide-list {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  width: 260px;
+  overflow-x: hidden;
+  @media (min-width: $tablet-width) {
+    width: 560px;    
+  }
+  @media (min-width: $desktop-width) {
+    width: 1160px;
+  }
+}
+
+
+.juri__slide-item {
+  width: 260px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+  display: none;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.juri__slide-item--active {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+  }
+}
+
+.juri__slide-image {
+  margin: 0 auto; 
+  
+}
+
+.juri__slide-item--active::before {
+  content: "Анна Павлова";
+  position: absolute;
+  display: block;
+  width: 260px;
+  height: 22px;
+  color: $text-color-white;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  bottom: 25px;
+  opacity: 1;
+}
+
+
+.juri__info {
+  background-color: rgba($color: #102654, $alpha: 0.89);
+  width: 260px;
+  height: 300px;
+  padding: 46px 41px;
+  color: $text-color-white;
+  position: relative;
+  bottom: 300px;
+  display: none;
+}
+
+.juri__slide-item--active:hover > .juri__info,
+.juri__slide-item--active:focus > .juri__info  {
+  display: block;
+}
+
+
+.juri__info-title {
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.juri__info-subtitle {
+  color: #B6BDCC;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.juri__info-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding-left: 16px;
+}
+
+.juri__info-item {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 12px;  
+  position: relative;
+}
+
+.juri__info-item::before {
+  content: " ";
+  width: 6px;
+  height: 6px;
+  background-color: $backgraund-color;
+  border-radius: 50%;
+  left: -16px;
+  top: 8px;
+  position: absolute;
+}
+
+.juri__buttons-wrapper {
+  display: none;
+  @media (min-width: $tablet-width) {
+    
+    position: absolute;
+    width: 670px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    top: 50% 
+  }
+  @media (min-width: $desktop-width) {
+    width: 1270px;
+  }
+}
+
+.juri__button {
+  @media (min-width: $tablet-width) {
+  width: 16px;
+  height: 32px;
+  border: none;
+  cursor: pointer;
+  background-image: url("../../img/sprite/slider-button.svg");
+  background-color: transparent;
+  }
+}
+
+.juri__button--next {
+  transform: rotate(180deg);
+}

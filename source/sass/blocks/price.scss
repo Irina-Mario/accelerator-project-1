@@ -55,7 +55,7 @@
 
 .price__container::after {
   @media (min-width: $tablet-width) {
-    content: url("../../img/price-back-tablet.png");
+    content: url(../../img/price-back-tablet@1x.png);
     width: 275px;
     height: 328px;
     position: absolute;
@@ -68,7 +68,7 @@
     bottom: 75px;
     width: 321px;
     height: 384px;
-    content: url("../../img/price-back-desk.png");
+    content: url("../../img/price-back-desk@1x.png");
   }
 }
 
