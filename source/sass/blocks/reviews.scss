@@ -1,8 +1,10 @@
 .reviews__container {
   padding: 40px 25px;
+
   @media (min-width: $tablet-width) {
     padding: 60px 0;
   }
+
   @media (min-width: $desktop-width) {
     padding: 100px 55px;
   }
@@ -10,14 +12,15 @@
 
 .reviews__title {
   margin-bottom: 40px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 35px;
     font-size: 54px;
     line-height: 54px;
+    
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 75px;
   }
 }
-
-

@@ -8,10 +8,11 @@
 .offers-banner__image-wrapper {
   margin: 0 auto;
   width: 100%;
-  outline: 1px solid brown;
+
   @media (min-width: $tablet-width) {
     width: 400px;
   }
+
   @media (min-width: $desktop-width) {
     margin: 0;
     width: 280px;
@@ -22,6 +23,7 @@
   margin-left: -15px;
   display: block;
   margin-bottom: 0;
+
   @media (min-width: $tablet-width) {
     margin-left: 0;
   }
@@ -38,6 +40,7 @@
     margin-left: 0;
     width: 278px;
   }
+
   @media (min-width: $desktop-width) {
     width: 280px;
     padding: 40px 45px;
@@ -46,16 +49,25 @@
 
 .offers-banner__content {
   margin: 0 auto;
-  padding: 30px;
+  padding: 31px;
+  padding-bottom: 32px;
   text-align: center;
+  width: 290px;
+
   @media (min-width: $tablet-width) {
     padding: 0;
+    padding-bottom: 0;
     text-align: left;
     margin: 0;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    min-height: 382px;
   }
- 
+
+  @media (min-width: $desktop-width) {
+    min-height: 380px;
+  }
 }
 
 .offers-banner__content span {
@@ -63,13 +75,13 @@
   font-size: 22px;
   line-height: 22px;
   font-weight: 700;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
-    text-align:left;
+    text-align: left;
     margin-bottom: 20px;
     margin-right: auto;
   }
@@ -80,7 +92,7 @@
   }
 }
 
-.offers-banner__content h4 {
+.offers-banner__content h3 {
   font-size: 64px;
   line-height: 64px;
   font-weight: 700;
@@ -94,26 +106,20 @@
     text-align: left;
     margin-bottom: 40px;
   }
-
 }
 
 .offers-banner__content p {
   font-size: 16px;
   line-height: 20px;
   font-weight: 300;
-  margin-bottom: auto;
+  margin-bottom: 26px;
   margin-top: 0;
-  
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
     text-align: left;
-    margin-bottom: 160px;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 156px;
+    margin-bottom: auto;
   }
 }
 
@@ -123,7 +129,33 @@
   position: relative;
   padding: 0;
   text-align: start;
-  
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-decoration: none;
+  color: $text-color-white;
+  width: 73px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 6px;
+  }
+}
+
+.offers-banner__button:hover {
+  opacity: 0.8;
+}
+
+.offers-banner__button:focus-visible {
+  outline: none;
+}
+
+.offers-banner__button:focus {
+  outline: 1px solid $text-color-white;
+}
+
+.offers-banner__button:focus::after {
+  display: none;
+}
+
+.offers-banner__button:disabled {
+  opacity: 50%;
 }
 
 .offers-banner__button::after {

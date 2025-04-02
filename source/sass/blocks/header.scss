@@ -2,37 +2,41 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 16px;
+  padding-top: 14px;
   padding-bottom: 16px;
   min-height: 54px;
-  outline: 5px solid aqua;
-  margin-bottom: 48px;
+  margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
     min-height: 84px;
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 1160px;
     margin: 0 auto;
     min-height: 86px;
-    margin-bottom: 30px;;
+    margin-bottom: 30px;
+    padding-top: 31px;
   }
 }
 
 .header__phone {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 22px;
   line-height: 22px;
   font-weight: 700;
   color: $text-color-white;
   text-decoration: none;
+  margin-right: 1px;
+ ;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,7 +45,25 @@
   }
 }
 
+.header__phone:hover {
+  color: rgba(28, 51, 116, 0.5);
+}
+
+.header__phone:focus {
+  color: $backgraund-blue;
+}
+
+.header__phone:active {
+  color: $backgraund-dark-blue;
+}
+
+.header__phone:disabled {
+  color: #f8f9fc;
+}
+
 .header__logo-icon {
+  width: 100px;
+  height: 20px;
 
   @media (min-width: $tablet-width) {
     width: 110px;

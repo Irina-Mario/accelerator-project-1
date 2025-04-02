@@ -1,5 +1,6 @@
 .offers__container {
   padding: 40px 0;
+  padding-top: 41px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 0;
@@ -11,7 +12,8 @@
 }
 
 .offers__title {
-  margin-bottom: 40px;
+  margin-bottom: 39px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 35px;
   }
@@ -37,7 +39,8 @@
 .offers__block {
   margin: 0 auto;
   border: 7px solid;
-  padding: 20px;
+  padding: 19px;
+  padding-top: 22px;
   text-align: center;
   width: 100%;
   margin-bottom: 30px;
@@ -46,16 +49,20 @@
   display: flex;
   flex-direction: column;
 
- @media (min-width: $tablet-width) {
-  width: 324px;
-  margin: 0;
-  text-align: left;
-  min-height: 188px;
- }
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin: 0;
+    text-align: left;
+    min-height: 188px;
+    padding-top: 0;
+    padding: 20px;
+    
+  }
 
- @media (min-width: $desktop-width) {
-  margin-bottom: 30px;
-  width: 560px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+    width: 560px;
+    min-height: 174px;
   }
 }
 
@@ -66,11 +73,11 @@
 .offers__block h4 {
   font-size: 22px;
   line-height: 22px;
-  font-weight: 700px;
+  font-weight: 700;
   color: $backgraund-blue;
   margin-top: 0;
   margin-bottom: 20px;
-  
+
   @media (min-width: $tablet-width) {
     font-size: 26px;
     line-height: 26px;
@@ -84,11 +91,12 @@
   font-weight: 300;
   color: $backgraund-blue;
   margin-top: 0;
-  margin-bottom: auto;
+  margin-bottom: 19px;
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
- 
+    margin-bottom: auto;
   }
 }
 
@@ -99,7 +107,36 @@
   padding: 0;
   position: relative;
   margin: 0;
-  text-align: start;
+  text-decoration: none;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  display: block;
+  min-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    width: 73px;
+    margin-bottom: 6px;
+  }
+}
+
+.offers__block-button:hover {
+  opacity: 0.8;
+}
+
+.offers__block-button:focus-visible {
+  outline: none;
+}
+
+.offers__block-button:focus {
+  outline: 1px solid $backgraund-blue;
+}
+
+.offers__block-button:focus::after {
+  display: none;
+}
+
+.offers__block-button:disabled {
+  opacity: 50%;
 }
 
 .offers__block-button::after {
@@ -109,7 +146,12 @@
   width: 73px;
   background-color: $backgraund-blue;
   position: absolute;
-  bottom: -5px;
+  bottom: 1px;
+  left: 82px;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+  }
 }
 
 .offers__blocks-wrapper {
@@ -117,20 +159,21 @@
   width: 100%;
   justify-content: space-between;
   flex-direction: column;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
+
   @media (min-width: $desktop-width) {
     justify-content: end;
     width: 560px;
+    flex-direction: column;
   }
-
 }
 
 .offers__inner-container {
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    
   }
 }
